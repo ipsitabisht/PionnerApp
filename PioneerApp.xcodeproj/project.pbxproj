@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16814B4524C0D2E0009C60AD /* RoleModelTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16814B4424C0D2E0009C60AD /* RoleModelTableViewController.swift */; };
+		16814B4724C0D38C009C60AD /* RoleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16814B4624C0D38C009C60AD /* RoleModel.swift */; };
+		16814B4924C0F23C009C60AD /* InfoOnRMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16814B4824C0F23C009C60AD /* InfoOnRMViewController.swift */; };
 		86BFFFA124BE6732000FF11D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BFFFA024BE6732000FF11D /* AppDelegate.swift */; };
 		86BFFFA324BE6732000FF11D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BFFFA224BE6732000FF11D /* SceneDelegate.swift */; };
 		86BFFFA524BE6732000FF11D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BFFFA424BE6732000FF11D /* ViewController.swift */; };
@@ -36,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		16814B4424C0D2E0009C60AD /* RoleModelTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleModelTableViewController.swift; sourceTree = "<group>"; };
+		16814B4624C0D38C009C60AD /* RoleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleModel.swift; sourceTree = "<group>"; };
+		16814B4824C0F23C009C60AD /* InfoOnRMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoOnRMViewController.swift; sourceTree = "<group>"; };
 		86BFFF9D24BE6732000FF11D /* PioneerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PioneerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86BFFFA024BE6732000FF11D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86BFFFA224BE6732000FF11D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,10 +111,13 @@
 				86BFFFA224BE6732000FF11D /* SceneDelegate.swift */,
 				86BFFFA424BE6732000FF11D /* ViewController.swift */,
 				86BFFFA624BE6732000FF11D /* Main.storyboard */,
+				16814B4424C0D2E0009C60AD /* RoleModelTableViewController.swift */,
 				86BFFFAC24BE6734000FF11D /* Assets.xcassets */,
 				86BFFFAE24BE6734000FF11D /* LaunchScreen.storyboard */,
 				86BFFFB124BE6734000FF11D /* Info.plist */,
 				86BFFFA924BE6732000FF11D /* PioneerApp.xcdatamodeld */,
+				16814B4624C0D38C009C60AD /* RoleModel.swift */,
+				16814B4824C0F23C009C60AD /* InfoOnRMViewController.swift */,
 			);
 			path = PioneerApp;
 			sourceTree = "<group>";
@@ -262,10 +271,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16814B4524C0D2E0009C60AD /* RoleModelTableViewController.swift in Sources */,
 				86BFFFA524BE6732000FF11D /* ViewController.swift in Sources */,
 				86BFFFA124BE6732000FF11D /* AppDelegate.swift in Sources */,
 				86BFFFAB24BE6732000FF11D /* PioneerApp.xcdatamodeld in Sources */,
 				86BFFFA324BE6732000FF11D /* SceneDelegate.swift in Sources */,
+				16814B4724C0D38C009C60AD /* RoleModel.swift in Sources */,
+				16814B4924C0F23C009C60AD /* InfoOnRMViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
