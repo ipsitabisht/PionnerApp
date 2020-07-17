@@ -27,8 +27,8 @@ class EInfoProgramsViewController: UIViewController {
     }
     
     @IBAction func addTapped(_ sender: Any) {
-        nameLabel.text = "❤️" + selectedProgram.name
-        selectedProgram.name = "❤️" + selectedProgram.name
+        nameLabel.text = "💙" + selectedProgram.name
+        selectedProgram.name = "💙" + selectedProgram.name
         
           
         previousVC.tableView.reloadData()

@@ -24,8 +24,8 @@ class SInfoRMViewController: UIViewController {
     
     
     @IBAction func addTapped(_ sender: Any) {
-        nameLabel.text = "❤️" + selectedRM.name
-           selectedRM.name = "❤️" + selectedRM.name
+        nameLabel.text = "💚" + selectedRM.name
+           selectedRM.name = "💚" + selectedRM.name
         
           
            previousVC.tableView.reloadData()

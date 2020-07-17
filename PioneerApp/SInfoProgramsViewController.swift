@@ -30,8 +30,8 @@ class SInfoProgramsViewController: UIViewController {
 
     @IBAction func addTapped(_ sender: Any) {
         
-        nameLabel.text = "❤️" + selectedProgram.name
-        selectedProgram.name = "❤️" + selectedProgram.name
+        nameLabel.text = "💚" + selectedProgram.name
+        selectedProgram.name = "💚" + selectedProgram.name
         
         previousVC.tableView.reloadData()
         navigationController?.popViewController(animated: true)
