@@ -21,7 +21,7 @@ class MRoleModelsTableViewController: UITableViewController {
         
         let sGem = RoleModel()
         sGem.name = "Sophie Germain"
-        sGem.bio = "Sophie Germain was a French mathematician, physicist, and philosopher. One of the pioneers of elasticity theory, she won the grand prize from the Paris Academy of Sciences for her essay on the subject. Her work on Fermat's Last Theorem provided a foundation for mathematicians exploring the subject for hundreds of years after"
+        sGem.bio = "Sophie Germain was a French mathematician, physicist, and philosopher. One of the pioneers of elasticity theory, she won the grand prize from the Paris Academy of Sciences for her essay on the subject. Her work on Fermat's Last Theorem provided a foundation for mathematicians exploring the subject for hundreds of years after."
         
         return [hyp, mMi, sGem]
         

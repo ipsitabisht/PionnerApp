@@ -23,7 +23,7 @@ class MProgramsTableViewController: UITableViewController {
         campE.name = "Camp Euclid"
         campE.what = "What: A six week online math camp for teenagers younger than 19 years old that allows them to encounter unsolved problems."
         campE.loc = "Where: Online"
-        campE.cost = "Cost: $1200 (grants available"
+        campE.cost = "Cost: $1200 (grants available)"
         
         return [agAm, campE]
         

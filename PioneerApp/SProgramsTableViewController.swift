@@ -26,8 +26,8 @@ class SProgramsTableViewController: UITableViewController {
         
         let lmuES = Programs()
         lmuES.name = "Loyola Marymount University Environmental Science"
-        lmuES.what = "What: A two week field ecology course where students can learn about the wetlands in the Ballona Wetlands and study complex socio-ecological challenges, including the human-wildlife intersect, habitat fragmentation, climate change mitigation, protection of wildlife corridors & biodiversity, pollution management, water quality, and green space equity, among others."
-        lmuES.loc = "Los Angeles, California"
+        lmuES.what = "What: A two week field ecology course where students can learn about the wetlands in the Ballona Wetlands and study complex socio-ecological challenges."
+        lmuES.loc = "Where: Los Angeles, California"
         lmuES.cost = "Cost: $2460"
         
         let barnard = Programs()

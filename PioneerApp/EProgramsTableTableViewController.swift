@@ -29,7 +29,7 @@ class EProgramsTableTableViewController: UITableViewController {
         
         let umdEngineering = Programs()
         umdEngineering.name = "University of Maryland Women in Engineering"
-        umdEngineering.what = "What: A one-week summer program for rising 11th and 12th grader girls who are considering engineering as a possible major and career. It allows girls to explore the world of engineering through hands-on activities, laboratory experiments, informative workshops, team challenges and seminars with professional engineers."
+        umdEngineering.what = "What: A one-week summer program for rising 11th and 12th grader girls who are considering engineering as a possible major and career. It allows girls to explore the world of engineering."
         umdEngineering.loc = "Where: College Park, Maryland"
         umdEngineering.cost = "Cost: $1300"
         
