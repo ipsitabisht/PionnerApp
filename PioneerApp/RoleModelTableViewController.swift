@@ -9,96 +9,6 @@
 import UIKit
 
 class RoleModelTableViewController: UITableViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        roleModels = createRoleModel()
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
-    }
-
-    // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 1
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return roleModels.count
-    }
-
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        let roleModel = roleModels[indexPath.row]
-        
-        cell.textLabel?.text = roleModel.name
-        
-        return cell
-    }
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let roleModel = roleModels[indexPath.row]
-        
-        performSegue(withIdentifier: "moveToInfo", sender: roleModel)
-        
-    }
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let infoRMVC = segue.destination as? InfoOnRMViewController{
-            if let  roleModel = sender as? RoleModel{
-                infoRMVC.selectedRM  = roleModel
-                infoRMVC.previousVC = self
-            }
-        }
-        
-    }
-    
     
     func createRoleModel() -> [RoleModel]{
         //all the role models that show up in the rows in the table view controller
@@ -118,6 +28,71 @@ class RoleModelTableViewController: UITableViewController {
         return [edithClarke , aprilleEricssonJackson , ellenOchoa, hedyLamarr ]
     }
     
-    var roleModels : [RoleModel] = []
+    
+    //CREATED AN ARRAY FOR OBJECTS
+   var roleModels : [RoleModel] = []
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        //CALLS FUNCTION
+        roleModels = createRoleModel()
+      
+    }
+    
+
+
+    // MARK: - Table view data source
+
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 1
+    }
+    
+    
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
+        return roleModels.count
+    }
+
+    //sets up the cells in TABLE VIEW CONTROLLER
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+
+        let roleModel = roleModels[indexPath.row]
+        
+        cell.textLabel?.text = roleModel.name
+        
+        return cell
+    }
+    
+    
+    //PERFORMS SEGUE TO INFO PAGE ON ROLE MODELS
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let roleModel = roleModels[indexPath.row]
+        
+        performSegue(withIdentifier: "moveToInfo", sender: roleModel)
+        
+    }
+
+ 
+    
+    // MARK: - Navigation
+
+   //SENDS OBJECT INFO WHEN OBJECT IS SELCTED TO GO TO NEW INFO PAGE
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let infoRMVC = segue.destination as? InfoOnRMViewController{
+            if let  roleModel = sender as? RoleModel{
+                infoRMVC.selectedRM  = roleModel
+                infoRMVC.previousVC = self
+            }
+        }
+        
+    }
+    
+    
+
 
 }

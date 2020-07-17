@@ -1,5 +1,5 @@
 //
-//  InfoOnRMViewController.swift
+//  EInfoProgramsViewController.swift
 //  PioneerApp
 //
 //  Created by Not Tanu on 7/16/20.
@@ -7,28 +7,30 @@
 //
 
 import UIKit
-import CoreData
 
-class InfoOnRMViewController: UIViewController {
-    var previousVC =  RoleModelTableViewController()
-    var selectedRM = RoleModel()
+class EInfoProgramsViewController: UIViewController {
+    var previousVC = EProgramsTableTableViewController()
+    var selectedProgram = Programs()
+
     @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var bioLabel: UILabel!
-    
+    @IBOutlet weak var whatLabel: UILabel!
+    @IBOutlet weak var whereLabel: UILabel!
+    @IBOutlet weak var costLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        nameLabel.text = selectedRM.name
-        bioLabel.text = selectedRM.bio
-
+        nameLabel.text = selectedProgram.name
+        whatLabel.text = selectedProgram.what
+        whereLabel.text = selectedProgram.loc
+        costLabel.text = selectedProgram.cost
+        
         // Do any additional setup after loading the view.
     }
     
     @IBAction func addTapped(_ sender: Any) {
-      
-        nameLabel.text = "❤️" + selectedRM.name
-        selectedRM.name = "❤️" + selectedRM.name
-     
-       
+        nameLabel.text = "❤️" + selectedProgram.name
+        selectedProgram.name = "❤️" + selectedProgram.name
+        
+          
         previousVC.tableView.reloadData()
         navigationController?.popViewController(animated: true)
     }

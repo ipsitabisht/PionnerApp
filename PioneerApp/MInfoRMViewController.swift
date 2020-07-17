@@ -1,5 +1,5 @@
 //
-//  InfoOnRMViewController.swift
+//  MInfoRMViewController.swift
 //  PioneerApp
 //
 //  Created by Not Tanu on 7/16/20.
@@ -7,13 +7,14 @@
 //
 
 import UIKit
-import CoreData
 
-class InfoOnRMViewController: UIViewController {
-    var previousVC =  RoleModelTableViewController()
+class MInfoRMViewController: UIViewController {
+    var previousVC = MRoleModelsTableViewController()
     var selectedRM = RoleModel()
-    @IBOutlet weak var nameLabel: UILabel!
+    
     @IBOutlet weak var bioLabel: UILabel!
+    
+    @IBOutlet weak var nameLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,16 +24,16 @@ class InfoOnRMViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+
     @IBAction func addTapped(_ sender: Any) {
-      
         nameLabel.text = "❤️" + selectedRM.name
-        selectedRM.name = "❤️" + selectedRM.name
-     
-       
-        previousVC.tableView.reloadData()
-        navigationController?.popViewController(animated: true)
+           selectedRM.name = "❤️" + selectedRM.name
+        
+          
+           previousVC.tableView.reloadData()
+           navigationController?.popViewController(animated: true)
+        
     }
-    
     /*
     // MARK: - Navigation
 
