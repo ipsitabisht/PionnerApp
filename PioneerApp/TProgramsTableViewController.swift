@@ -28,7 +28,7 @@ class TProgramsTableViewController: UITableViewController {
         let gDev = Programs()
         gDev.name = "Girl Develop It"
         gDev.what = "What: Classes and camps teaching girls 9-18 how to build with power tools and screen print to convey a message."
-        gDev.loc = "Where: Berkeley, California"
+        gDev.loc = "Where: San Francisco, Washington DC, Chicago, Detroit, New York"
         gDev.cost = "Cost:Classes and Camps for High Schoolers are free, and pre high-school girls classes are $350 and camps are $525 (scholarships available)"
         
         return [kwk, gwc, gDev]

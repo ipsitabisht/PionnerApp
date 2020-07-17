@@ -18,7 +18,7 @@ class RoleModelTableViewController: UITableViewController {
         edithClarke.bio = "Edith Clarke was the first female engineer to achieve professional standing in Tau Beta Pi. In 1948, Clarke was the first female Fellow of the American Institute of Electrical Engineers. She was the first woman to be accepted as a full voting member in the American Institute of Electrical Engineers."
         let aprilleEricssonJackson = RoleModel()
         aprilleEricssonJackson.name = "Aprille Ericsson-Jackson"
-        aprilleEricssonJackson.bio = "Ericsson-Jackson is the first African-American woman to receive a Ph.D. in mechanical engineering from Howard University and the first African-American woman to receive a Ph.D. in Engineering at the National Aeronautics and Space Administration (NASA) Goddard Space Flight Center "
+        aprilleEricssonJackson.bio = "Ericsson-Jackson is the first African-American woman to receive a Ph.D. in mechanical engineering from Howard University and the first African-American woman to receive a Ph.D. in Engineering at the National Aeronautics and Space Administration (NASA) Goddard Space Flight Center. "
         let ellenOchoa = RoleModel()
         ellenOchoa.name = "Ellen Ochoa"
         ellenOchoa.bio = "Ellen Ochoa is an American engineer, former astronaut and former director of the Johnson Space Center. In 1993 Ochoa became the first Hispanic woman to go to space when she served on a nine-day mission aboard the Space Shuttle Discovery. "

@@ -21,7 +21,7 @@ class SRoleModelsTableViewController: UITableViewController {
     func createRoleModel() -> [RoleModel]{
         let marieC = RoleModel()
         marieC.name = "Marie Curie"
-        marieC.bio = "Marie Curie was a physicist, chemist and a pioneer in the study of radiation. She and her husband, Pierre, discovered the elements polonium and radium. They and Henri Becquerel were awarded the Nobel Prize in Physics in 1903, and Marie received the Nobel Prize in Chemistry in 1911"
+        marieC.bio = "Marie Curie was a physicist, chemist and a pioneer in the study of radiation. She and her husband, Pierre, discovered the elements polonium and radium. They and Henri Becquerel were awarded the Nobel Prize in Physics in 1903, and Marie received the Nobel Prize in Chemistry in 1911."
         
         let janakiA = RoleModel()
         janakiA.name = "Janaki Ammal"
